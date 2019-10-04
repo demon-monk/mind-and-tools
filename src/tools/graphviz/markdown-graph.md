@@ -119,13 +119,15 @@ graph {
   splines=line;
   subgraph cluster_0 {
     label="Subgraph A";
-    a;b;c;
+    a[color="red"];
+    b[style="filled", fillcolor="red"];
+    c[label="Label"];
   }
   subgraph cluster_1 {
     label="Subgraph B";
     d;e;f;
   }
-  a--d
+  a--d [color=green ]
   b--d
   b--e
   c--e
@@ -153,4 +155,18 @@ graph {
   { rank=same; o, p, q, r }
   { rank=same; s, t }
 }
+```
+
+## Ditta
+
+```ditaa {cmd=true args=["-E"] filename="graphviz-ditta.png"}
+ +--------+   +-------+    +-------+
+ |        | --+ ditaa +--> |       |
+ |  Text  |   +-------+    |diagram|
+ |Document|   |!magic!|    |       |
+ |     {d}|   |       |    |       |
+ +---+----+   +-------+    +-------+
+     :                         ^
+     |       Lots of work      |
+     +-------------------------+
 ```
