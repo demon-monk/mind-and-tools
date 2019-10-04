@@ -159,14 +159,16 @@ graph {
 
 ## Ditta
 
-```ditaa {cmd=true args=["-E"] filename="graphviz-ditta.png"}
- +--------+   +-------+    +-------+
- |        | --+ ditaa +--> |       |
- |  Text  |   +-------+    |diagram|
- |Document|   |!magic!|    |       |
- |     {d}|   |       |    |       |
- +---+----+   +-------+    +-------+
-     :                         ^
-     |       Lots of work      |
-     +-------------------------+
+```ditaa {filename="ditta.png" cmd=true args=["-E"]}
+  +--------+   +-------+    +-------+
+  |        | --+ ditaa +--> |       |
+  |  Text  |   +-------+    |diagram|
+  |Document|   |!magic!|    |       |
+  |     {d}|   |       |    |       |
+  +---+----+   +-------+    +-------+
+      :                         ^
+      |       Lots of work      |
+      +-------------------------+
 ```
+
+![](/assets/ditta.png)
